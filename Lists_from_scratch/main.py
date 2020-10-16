@@ -10,7 +10,7 @@ my_queue = lists.Queue()
 my_tree = lists.Tree()
 my_recalibrator = lists.TreeRecalibrator()
 
-for i in range(0, 20):
+for i in range(100):
     my_tree.insert(np.random.randint(0, 100))
 
 my_tree.display()

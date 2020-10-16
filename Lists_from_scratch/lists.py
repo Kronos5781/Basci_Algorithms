@@ -7,6 +7,7 @@ class LinkedList():
         self.size = 0
 
     def node_at_index(self, index):
+        # Function which loops through all the nodes present int the list and returns it when the index meets the counter
         current = self.root
         counter = 0
         while current:
@@ -69,6 +70,7 @@ class Stack:
         self.head = head
         self.size = 0
 
+    # Add value to the stack
     def add(self, data):
         new_node = nodes.Node(data)
 
@@ -80,6 +82,7 @@ class Stack:
 
         self.size += 1
 
+    # Take one value of the stack
     def pop(self):
         current = self.head
         self.head = current.get_previous()
@@ -114,7 +117,8 @@ class Queue:
         self.size += 1
 
     def pop(self):
-        current = self.ro
+        # Returns the next Value in the Queue
+        current = self.root
         self.size -= 1
 
         return current.get_data()
